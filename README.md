@@ -26,6 +26,8 @@ With regards to authorization, there are three main areas of interest: authorizi
 To get started, let create a spring mvc web app and then add spring-security to secure certain pages. [Here](https://github.com/bhochhi/spring-guide/tree/master/examples/spring-security) is the final version of web application that integrates spring security for demostration. Also checkout [spring](http://spring.io/guides/gs/securing-web/) for the details of this demo. 
 
 
+Spring Boot
+---
 
 
 
