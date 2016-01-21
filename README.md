@@ -7,6 +7,7 @@ Spring Boot
 
 Deployment Strategy for web application built using Spring Boot
 ---
+https://spring.io/blog/2014/03/07/deploying-spring-boot-applications
 
 Spring MVC
 ---
