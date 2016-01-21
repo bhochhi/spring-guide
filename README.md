@@ -23,7 +23,8 @@ At an authentication level, Spring Security supports:
 
 With regards to authorization, there are three main areas of interest: authorizing web requests. authorizing whether methods can be invoked, and authorizing access to individual access to individual domain object instances. 
 
-To get started, let create a spring mvc web app and then add spring-security to secure certain pages. [Here]() is the final version of web application that integrates spring security for demostration. Also checkout [spring]() for details. 
+To get started, let create a spring mvc web app and then add spring-security to secure certain pages. [Here](https://github.com/bhochhi/spring-guide/tree/master/examples/spring-security) is the final version of web application that integrates spring security for demostration. Also checkout [spring](http://spring.io/guides/gs/securing-web/) for the details of this demo. 
+
 
 
 
@@ -31,4 +32,3 @@ To get started, let create a spring mvc web app and then add spring-security to 
 
 http://www.tutorialspoint.com/spring/spring_architecture.htm
 http://spring.io/docs
-
