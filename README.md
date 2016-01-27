@@ -1,6 +1,13 @@
 Spring Framework
 ---
+This is a comprehensive programming model and configuration model for morden java-based enterprise application. This framework is very modular and lightweighted as you can use various features individually into your existing applications. Think of this framework is an alternative to EJB() but it has ability to replace or even work along with EJB model.  Some of the features of Spring framework are:
 
+* Dependency Injection using Spring Core container.
+* Aspect-Oriented Programming including Spring's declarative transaction management.
+* Spring MVC web application and RESTful web service framework. 
+* Fundamental support for JDBC, JPA, JMS...
+* Authentication and Authorization using Spring Security. 
+* 
 
 Spring Boot
 ---
