@@ -8,6 +8,7 @@ This is a comprehensive programming model and configuration model for morden jav
 * Fundamental support for JDBC, JPA, JMS...
 * Authentication and Authorization using Spring Security. 
 * 
+ref: http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/overview.html
 
 Spring Boot
 ---
