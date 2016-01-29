@@ -13,7 +13,16 @@ ref: http://docs.spring.io/spring-framework/docs/current/spring-framework-refere
 Spring Boot
 ---
 
-This is the way to build new spring application quickly. Getting started with application is fast. There is a good amount of convention over configuration. You can run application using java -jar as standalone or continue with war deployment into container. TO get started check out the spring-boot-started:
+This is the way to build new spring application quickly. Getting started with application is fast without much boilerplate code. There is a good amount of convention over configuration. You can run application using java -jar as standalone or continue with war deployment into container. Check out [spring-boot-init]() example created using following steps:
+
+1. Once you have java and maven installed, 
+2. 
+
+
+####working with Spring Boot CLI
+
+
+
 
 
 
