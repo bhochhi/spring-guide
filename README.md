@@ -35,17 +35,40 @@ This is the way to build new spring application quickly. Getting started with ap
  ```
 
 2. This is simple maven project which is just empty yet but should compile and packaged well. Now we need to add dependencies depending upon what kind of app we are going to create. Spring-boot provides a number of "Starter POMs", a set of convient dependency descriptors that can be included in your application. It really make easy to add jars into your classpath. Any dependencies we needed that spring boot might have, can be imported using starter poms. In fact __spring-boot-starter-parent__ in our pom.xml is already a starter pom, that provides useful maven defaults. Let's say if we want to create web application then _spring-boot-starter-web__ is starter poms we want to include into your pom. So, add the following dependency into your pom.xml
-```xml
+ ```xml
 <dependencies>
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 </dependencies>
-```
- One important convention to be noted: every starter pom follow a similar naming pattern: __spring-boot-starter-*__, where * is a particular type of application. checkout this [link](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter-poms) to find what starters are provided by Spring Boot.
+ ```
+  One important convention to be noted: every starter pom follow a similar naming pattern: __spring-boot-starter-*__, where * is a particular type of application. checkout this [link](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter-poms) to find what starters are provided by Spring Boot.
 
-3. 
+3. Let's write some code, into the src/main/java folder and name it HelloWorld.java
+ ```java
+import org.springframework.boot.*;
+import org.springframework.boot.autoconfigure.*;
+import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@EnableAutoConfiguration
+public class Example {
+
+    @RequestMapping("/")
+    String home() {
+        return "Hello World!";
+    }
+
+    public static void main(String[] args) throws Exception {
+        SpringApplication.run(Example.class, args);
+    }
+
+}
+ ```
+
+4. fdfd
 
 
 ####working with Spring Boot CLI
