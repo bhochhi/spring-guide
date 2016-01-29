@@ -17,6 +17,7 @@ This is the way to build new spring application quickly. Getting started with ap
 
 1. Create a project folder called **my-spring-boot** and add the following pom.xml file.
 
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -34,6 +35,7 @@ This is the way to build new spring application quickly. Getting started with ap
     </parent>
 </project>
 ```
+
 2. This is simple maven project which is just empty yet but should compile and packaged well. Now we need to add dependencies depending upon what kind of app we are going to create. Spring-boot provides a number of "Starter POMs", a set of convient dependency descriptors that can be included in your application. It really make easy to add jars into your classpath. Any dependencies we needed that spring boot might have, can be imported using starter poms. In fact __spring-boot-starter-parent__ in our pom.xml is already a starter pom, that provides useful maven defaults. Let's say if we want to create web application then _spring-boot-starter-web__ is starter poms we want to include into your pom. So, add the following dependency into your pom.xml
 ```xml
 <dependencies>
@@ -43,9 +45,7 @@ This is the way to build new spring application quickly. Getting started with ap
     </dependency>
 </dependencies>
 ```
-
-One important convention to be noted: every starter pom follow a similar naming pattern: __spring-boot-starter-*, where * is a particular type of application. checkout this [link](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter-poms) to find what starters are provided by Spring Boot:
-
+ One important convention to be noted: every starter pom follow a similar naming pattern: __spring-boot-starter-*__, where * is a particular type of application. checkout this [link](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter-poms) to find what starters are provided by Spring Boot.
 
 3. 
 
