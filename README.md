@@ -67,9 +67,12 @@ public class Example {
 
 }
  ```
- * 
+ * Here, @RestController and @RequestMapping are the annotation from spring web mvc to that are used to create web services. @RestController make sure to register HelloWorld as controller class and @RequestMapping maps the request path to corresponding method.
+ * @EnableAutoConfiguration will tell to "guess" how you will want to configure spring, based on jar dependencies that you have added. Since __spring-boot-starter-web__ is our dependency which brings tomcat and spring mvc, the auto-configuration will assume that you are developing a web application and setup spring accordingly.
+ * The final part main method, the standard way for application entry point, delegates to Sring Boot's __SpringApplication__ by calling run. This call bootstraps our application. 
 
-4. fdfd
+4. Finally run the application by commond __mvn spring-boot:run__
+5. 
 
 
 ####working with Spring Boot CLI
