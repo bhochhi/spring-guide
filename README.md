@@ -13,7 +13,7 @@ ref: http://docs.spring.io/spring-framework/docs/current/spring-framework-refere
 Spring Boot
 ---
 
-This is the way to build new spring application quickly. Getting started with application is fast without much boilerplate code. There is a good amount of convention over configuration. You can run application using java -jar as standalone or continue with war deployment into container. There are multiple way to start/seed your application. [SPRING INITIALIZR](https://start.spring.io/) is one coolest way to get started quick. You select your build system (maven/gradle), choose spring boot version and just project artifacts and dependencies. Then just download your starter project. Other way to start is also using [spring boot cli]() Or Check out [my-spring-boot]() example created manually with following steps:
+This is the way to build new spring application quickly. Getting started with application is fast without much boilerplate code. There is a good amount of convention over configuration. You can run application using java -jar as standalone or continue with war deployment into container. There are multiple way to start/seed your application. [SPRING INITIALIZR](https://start.spring.io/) is one coolest way to get started quick. You select your build system (maven/gradle), choose spring boot version and just project artifacts and dependencies. Then just download your starter project. Other way to start is also using [spring boot cli](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started-installing-the-cli) Or Check out [my-spring-boot]() example created manually with following steps:
 
 1. Create a project folder called **my-spring-boot** and add the following pom.xml file.
  ```xml
@@ -72,7 +72,8 @@ public static void main(String[] args) throws Exception {
  * @EnableAutoConfiguration will tell to "guess" how you will want to configure spring, based on jar dependencies that you have added. Since __spring-boot-starter-web__ is our dependency which brings tomcat and spring mvc, the auto-configuration will assume that you are developing a web application and setup spring accordingly.
  * The final part main method, the standard way for application entry point, delegates to Sring Boot's __SpringApplication__ by calling run. This call bootstraps our application. 
 
-4. Finally run the application by command __mvn spring-boot:run__. 
+4. Run the application by command __mvn spring-boot:run__. 
+5. Finally to create the self contained application jar that embeds the web server,...
 
 
 
