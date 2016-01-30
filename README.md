@@ -47,23 +47,24 @@ This is the way to build new spring application quickly. Getting started with ap
 
 3. Let's write some code, into the src/main/java folder and name it HelloWorld.java
  ```java
-import org.springframework.boot.*;
-import org.springframework.boot.autoconfigure.*;
-import org.springframework.stereotype.*;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @EnableAutoConfiguration
-public class Example {
+public class HelloWorld {
 
-    @RequestMapping("/")
-    String home() {
-        return "Hello World!";
-    }
+@RequestMapping("/")
+String home() {
+    return "Hello World Rupesh!";
+}
 
-    public static void main(String[] args) throws Exception {
-        SpringApplication.run(Example.class, args);
-    }
+
+public static void main(String[] args) throws Exception {
+    SpringApplication.run(HelloWorld.class, args);
+}
 
 }
  ```
