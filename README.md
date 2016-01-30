@@ -71,8 +71,8 @@ public class Example {
  * @EnableAutoConfiguration will tell to "guess" how you will want to configure spring, based on jar dependencies that you have added. Since __spring-boot-starter-web__ is our dependency which brings tomcat and spring mvc, the auto-configuration will assume that you are developing a web application and setup spring accordingly.
  * The final part main method, the standard way for application entry point, delegates to Sring Boot's __SpringApplication__ by calling run. This call bootstraps our application. 
 
-4. Finally run the application by commond __mvn spring-boot:run__
-5. 
+4. Finally run the application by command __mvn spring-boot:run__. 
+
 
 
 ####working with Spring Boot CLI
