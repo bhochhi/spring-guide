@@ -73,7 +73,22 @@ public static void main(String[] args) throws Exception {
  * The final part main method, the standard way for application entry point, delegates to Sring Boot's __SpringApplication__ by calling run. This call bootstraps our application. 
 
 4. Run the application by command __mvn spring-boot:run__. 
-5. Finally to create the self contained application jar that embeds the web server,...
+5. Finally to create the self contained application jar that embeds the tomcat, for instance:
+   * Add following plugin into your pom.xml
+   ```xml
+   <build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+   ```
+   * Now package the application running the commond __mvn clean package__.
+   * Inside target, you will find __my-spring-boot-0.0.1-SNAPSHOT.jar__. 
+   * This jar is self contained application that you can run with __java -jar__ command. 
+   
 
 
 
