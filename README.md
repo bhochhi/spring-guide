@@ -127,3 +127,4 @@ To get started, let create a spring mvc web app and then add spring-security to 
 
 http://www.tutorialspoint.com/spring/spring_architecture.htm
 http://spring.io/docs
+https://dzone.com/articles/microservice-architecture-with-spring-cloud-and-do?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava 
