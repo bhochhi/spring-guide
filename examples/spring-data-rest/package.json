@@ -4,14 +4,13 @@
   "description": "Demo of ReactJS + Spring Data REST",
   "scripts": {
     "watch": "webpack --watch -d",
-    "build": "webpack"
-
+    "build": "webpack",
+    "start": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "rest": "^2.0.0",
-    "webpack": "^4.16.5"
+    "rest": "^2.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -19,6 +18,6 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "webpack-command": "^0.4.1"
+    "webpack": "^2.7.0"
   }
 }
