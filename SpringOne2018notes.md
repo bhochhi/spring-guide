@@ -30,44 +30,44 @@ SpringOne Platform 2018 .
 * Serverless event driver architecture:
     - lamda function, azure function, Knative... 
 * Unit testing
-      * Junit 5>> 
-          - Exception verification
-              ```java
-              @Test(expected = IllegalArgumentException.class)
-              public void shouldThrowException() throws Exception {
-                  Task task = buildTask();
-                  LocalDateTime oneHourAgo = LocalDateTime.now().minusHours(1);
-                  task.execute(oneHourAgo);
-              }
-              Vs
-              @Test
-              void shouldThrowException() throws Exception {
-                  Task task = buildTask();
-                  LocalDateTime oneHourAgo = LocalDateTime.now().minusHours(1);
-                  assertThrows(IllegalArgumentException.class,
-                               () -> task.execute(oneHourAgo));
-              }
-              ```
-          - Multiple Test Runners in a class
-          - Nested Test: @Nested
-          - Naming Tests: @DisplayName("In plain readable sentence") 
-          - Assumptions: assumpTrue, assumpFalse, assumpThat...
-               ```java
-               @Test
-                void exitIfTrueIsFalse() {
-                assumeFalse(this::truism);
-                System.exit(1);
-                }
-                private boolean truism() {
-                return true;
-                }
-               ```
-           - Lambda Support
-           - Parameterized Tests
-           
-      * AssertJ ==> http://joel-costigliola.github.io/assertj/index.html 
-      * BDD approach.... then >> groovy testing using spock framework is King.
-      * Spring: WebTestClient, @WebFluxTest, Spring MockMvc, 
+   * Junit 5>> .      
+       - Exception verification . 
+           ```java
+           @Test(expected = IllegalArgumentException.class)
+           public void shouldThrowException() throws Exception {
+               Task task = buildTask();
+               LocalDateTime oneHourAgo = LocalDateTime.now().minusHours(1);
+               task.execute(oneHourAgo);
+           }
+           Vs
+           @Test
+           void shouldThrowException() throws Exception {
+               Task task = buildTask();
+               LocalDateTime oneHourAgo = LocalDateTime.now().minusHours(1);
+               assertThrows(IllegalArgumentException.class,
+                            () -> task.execute(oneHourAgo));
+           }
+           ```
+       - Multiple Test Runners in a class . 
+       - Nested Test: @Nested . 
+       - Naming Tests: @DisplayName("In plain readable sentence") .    
+       - Assumptions: assumpTrue, assumpFalse, assumpThat...  
+            ```java
+            @Test
+             void exitIfTrueIsFalse() {
+             assumeFalse(this::truism);
+             System.exit(1);
+             }
+             private boolean truism() {
+             return true;
+             }
+            ```
+        - Lambda Support . 
+        - Parameterized Tests . 
+
+   * AssertJ ==> http://joel-costigliola.github.io/assertj/index.html .  
+   * BDD approach.... then >> groovy testing using spock framework is King.  
+   * Spring: WebTestClient, @WebFluxTest, Spring MockMvc,  
       
 * Spring Router 5
    ```java @Bean
@@ -121,4 +121,9 @@ SpringOne Platform 2018 .
         - Referrer Policy  
         - Redirect to HTTPS . 
       - Improvements for @AuthenticationPrincipal . 
-* Apache Geode
+      
+* Apache Geode 
+   - https://github.com/bhochhi/geode-guide/wiki/Apache-Geode 
+   
+   
+(workflowy)[https://workflowy.com/#/4fea0ceb7302]
