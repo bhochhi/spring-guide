@@ -36,11 +36,11 @@ class SSEController {
 		ExecutorService sseMvcExecutor = Executors.newSingleThreadExecutor();
 		sseMvcExecutor.execute(() -> {
 			try {
-				for (int i = 0; true; i++) {
+				for (int i = 0; i<5; i++) {
 					SseEmitter.SseEventBuilder event = SseEmitter.event()
 							.data("SSE MVC - " + LocalTime.now().toString())
 							.id(String.valueOf(i))
-							.name("sse event - mvc");
+							.name("data");
 					emitter.send(event);
 					Thread.sleep(1000);
 				}

@@ -11,8 +11,11 @@
         console.log('Open', event);
     }
     source.onmessage = function(event){
-        console.log('Open', event.data);
+        console.log('Message', event.data);
     }
+    source.addEventListener("data", function(){
+        console.log('Message', event.data);
+    })
 
 </script>
 </body>
