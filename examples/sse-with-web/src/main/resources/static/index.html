@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+<script>
+    var source = new EventSource("http://localhost:8080/sse/stream-sse-mvc");
+    source.onopen = function(event){
+        console.log('Open', event);
+    }
+    source.onmessage = function(event){
+        console.log('Open', event.data);
+    }
+
+</script>
+</body>
+</html>
